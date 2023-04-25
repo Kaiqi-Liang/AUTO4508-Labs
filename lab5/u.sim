@@ -1,0 +1,8 @@
+world u.wld
+
+settings TRACE
+
+marker  500  3500    0 255 0
+marker  3500  500    255 0 0
+
+S4 500 3500 0

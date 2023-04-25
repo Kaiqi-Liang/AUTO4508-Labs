@@ -1,0 +1,14 @@
+# Sim file created 04/03/2023 9:51 AM
+
+# World File 
+world "./noReturn_world.wld"
+
+settings TRACE
+
+# Robots
+S4 500 500 0
+
+# Objects
+# Markers
+marker 2700 2600 255 0 0
+marker 500 500 0 255 0
