@@ -1,0 +1,7 @@
+# Environment
+world small.maz
+
+settings VIS TRACE
+
+# Robot description file using "S" in maze as start position
+S4 S 90 maze.x
