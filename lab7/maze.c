@@ -199,10 +199,10 @@ void go_to(int dir) {
 	}
 
 	if (DEBUG) LCDSetPrintf(13, 0, "Straight %d %d   ", DIST, SPEED);
-	int step = 20;
+	int step = 24;
 	for (size_t i = 0; i < DIST / step; ++i) {
 		if (PSDGet(PSD_LEFT) < 100
-		    || (PSDGet(PSD_RIGHT) < 200 && PSDGet(PSD_RIGHT) > 150)) {
+		    || (PSDGet(PSD_RIGHT) < 180 && PSDGet(PSD_RIGHT) > 150)) {
 			VWTurn(-25, 50);
 			VWWait();
 			VWStraight(step, SPEED);
@@ -211,7 +211,7 @@ void go_to(int dir) {
 			VWWait();
 			if (++i == DIST / step) break;
 		} else if (PSDGet(PSD_RIGHT) < 100
-		           || (PSDGet(PSD_LEFT) < 200 && PSDGet(PSD_LEFT) > 150)) {
+		           || (PSDGet(PSD_LEFT) < 180 && PSDGet(PSD_LEFT) > 150)) {
 			VWTurn(25, 50);
 			VWWait();
 			VWStraight(step, SPEED);
