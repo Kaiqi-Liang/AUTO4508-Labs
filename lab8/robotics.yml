@@ -1,0 +1,10 @@
+name: robotics
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - scikit-learn=1.0.2
+  - tensorflow
+  - opencv
+  - pygame
